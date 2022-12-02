@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FigureItOut.controller.ModoCasinoController">
+   <bottom>
+      <AnchorPane prefHeight="472.0" prefWidth="784.0" styleClass="background" stylesheets="@../resources/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Separator layoutX="227.0" layoutY="192.0" prefHeight="11.0" prefWidth="309.0" style="-fx-background-color: #6b4f57;" />
+            <Label fx:id="labelNombre" layoutX="37.0" layoutY="40.0" text="Usuario:" textFill="#6b4f57">
+               <font>
+                  <Font name="Tahoma Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelSaldo" layoutX="609.0" layoutY="40.0" text="Saldo:" textFill="#6b4f57">
+               <font>
+                  <Font name="Tahoma Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="306.0" layoutY="386.0" mnemonicParsing="false" onAction="#realizarApuesta" prefHeight="34.0" prefWidth="152.0" style="-fx-background-color: #6b4f57; -fx-border-radius: 10 10 10 10;" text="Apostar" textFill="#f8f8f8">
+               <font>
+                  <Font name="Tahoma Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label fx:id="labelRespuesta" layoutX="137.0" layoutY="94.0" prefHeight="0.0" prefWidth="529.0" text="Ingrese el valor que desea apostar" textFill="#6b4f57">
+               <font>
+                  <Font name="Tahoma Bold" size="29.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtValor" alignment="CENTER" layoutX="309.0" layoutY="142.0" promptText="Ingrese un valor" style="-fx-border-width: 2px 2px; -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10; -fx-border-color: #836a71;" />
+            <TextField fx:id="txtNumero" alignment="CENTER" layoutX="309.0" layoutY="280.0" promptText="Ingrese un numero" style="-fx-border-width: 2px 2px; -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10; -fx-border-color: #836a71;" />
+            <Label fx:id="labelRespuesta1" layoutX="55.0" layoutY="229.0" prefHeight="37.0" prefWidth="693.0" text="Ingrese el numero de preguntas que acertaras" textFill="#6b4f57">
+               <font>
+                  <Font name="Tahoma Bold" size="29.0" />
+               </font>
+            </Label>
+            <Separator layoutX="227.0" layoutY="330.0" prefHeight="11.0" prefWidth="309.0" style="-fx-background-color: #6b4f57;" />
+         </children></AnchorPane>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FigureItOut.controller.RegistroController">
+   <top>
+      <AnchorPane prefHeight="650.0" prefWidth="1100.0" styleClass="background" stylesheets="@../resources/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#bb97a1" layoutX="371.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Figure it out">
+               <font>
+                  <Font name="Tahoma Bold" size="57.0" />
+               </font>
+            </Text>
+            <Region layoutX="244.0" layoutY="143.0" prefHeight="413.0" prefWidth="541.0" style="-fx-border-color: #836a71; -fx-border-width: 0004;" AnchorPane.leftAnchor="283.0" AnchorPane.topAnchor="201.0" />
+            <Text fill="#836a71" layoutX="482.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registro" wrappingWidth="156.87847900390625">
+               <font>
+                  <Font name="Tahoma Bold" size="37.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtUsuario" layoutX="480.0" layoutY="356.0" prefHeight="29.0" prefWidth="275.0" promptText="Ingrese su usuario" style="-fx-border-width: 2px 2px; -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10; -fx-border-color: #836a71;" AnchorPane.leftAnchor="480.0" AnchorPane.rightAnchor="345.0" />
+            <PasswordField fx:id="txtContrasena" layoutX="480.0" layoutY="416.0" prefHeight="29.0" prefWidth="278.0" promptText="Ingrese su contraseña" style="-fx-border-width: 2px 2px; -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10; -fx-border-color: #836a71;" AnchorPane.leftAnchor="480.0" AnchorPane.rightAnchor="342.0" />
+            <Text fill="#836a71" layoutX="345.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario:" wrappingWidth="90.87847900390625">
+               <font>
+                  <Font name="Tahoma Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#836a71" layoutX="345.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña:" wrappingWidth="131.21182250976562">
+               <font>
+                  <Font name="Tahoma Bold" size="20.0" />
+               </font>
+            </Text>
+            <Button layoutX="493.0" layoutY="485.0" mnemonicParsing="false" onAction="#registrarseEvent" prefHeight="38.0" prefWidth="121.0" text="Registrarse" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Text fill="#836a71" layoutX="345.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" wrappingWidth="90.87847900390625">
+               <font>
+                  <Font name="Tahoma Bold" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtNombre" layoutX="753.0" layoutY="295.0" prefHeight="29.0" prefWidth="279.0" promptText="Ingrese su nombre" style="-fx-border-width: 2px 2px; -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10; -fx-border-color: #836a71;" AnchorPane.rightAnchor="340.0" />
+         </children></AnchorPane>
+   </top>
+</BorderPane>

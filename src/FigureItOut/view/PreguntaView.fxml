@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FigureItOut.controller.PreguntaController">
+   <center>
+      <AnchorPane prefHeight="650.0" prefWidth="1100.0" styleClass="background" stylesheets="@../resources/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#bb97a1" layoutX="363.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Figure it out">
+               <font>
+                  <Font name="Tahoma Bold" size="57.0" />
+               </font>
+            </Text>
+            <Separator layoutX="150.0" layoutY="155.0" prefHeight="7.0" prefWidth="769.0" style="-fx-background-color: #bb97a1;" />
+            <Label fx:id="labelNombre" layoutX="99.0" layoutY="76.0" text="Usuario:" textFill="#907d82">
+               <font>
+                  <Font name="Tahoma Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelSaldo" layoutX="883.0" layoutY="76.0" text="Saldo:" textFill="#907d82">
+               <font>
+                  <Font name="Tahoma Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="respuestaA" layoutX="47.0" layoutY="296.0" mnemonicParsing="false" prefHeight="156.0" prefWidth="461.0" style="-fx-background-color: #ffffff; -fx-border-color: #bb97a1; -fx-border-width: 5;" text="A" textFill="#ae8080" AnchorPane.leftAnchor="47.0" AnchorPane.topAnchor="296.0">
+               <font>
+                  <Font name="Tahoma Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="respuestaB" layoutX="567.0" layoutY="296.0" mnemonicParsing="false" prefHeight="156.0" prefWidth="461.0" style="-fx-background-color: #ffffff; -fx-border-color: #bb97a1; -fx-border-width: 5;" text="B" textFill="#ae8080" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="296.0">
+               <font>
+                  <Font name="Tahoma Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="respuestaD" layoutX="567.0" layoutY="468.0" mnemonicParsing="false" prefHeight="156.0" prefWidth="461.0" style="-fx-background-color: #ffffff; -fx-border-color: #bb97a1; -fx-border-width: 5;" text="D" textFill="#ae8080" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="468.0">
+               <font>
+                  <Font name="Tahoma Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="respuestaC" layoutX="47.0" layoutY="468.0" mnemonicParsing="false" prefHeight="156.0" prefWidth="461.0" style="-fx-background-color: #ffffff; -fx-border-color: #bb97a1; -fx-border-width: 5;" text="C" textFill="#ae8080" AnchorPane.leftAnchor="47.0" AnchorPane.topAnchor="468.0">
+               <font>
+                  <Font name="Tahoma Bold" size="24.0" />
+               </font>
+            </Button>
+            <Text fx:id="labelPregunta" fill="#726d6e" layoutX="121.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿" wrappingWidth="816.2117309570312">
+               <font>
+                  <Font name="Tahoma Bold" size="21.0" />
+               </font>
+            </Text>
+            <Label fx:id="timerLabel" layoutX="510.0" layoutY="19.0" text="Label">
+               <font>
+                  <Font name="Tahoma Bold" size="21.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </center>
+</BorderPane>

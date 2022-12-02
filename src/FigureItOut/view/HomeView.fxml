@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FigureItOut.controller.HomeController">
+   <bottom>
+      <AnchorPane prefHeight="650.0" prefWidth="1100.0" styleClass="background" stylesheets="@../resources/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#bb97a1" layoutX="363.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Figure it out">
+               <font>
+                  <Font name="Tahoma Bold" size="57.0" />
+               </font>
+            </Text>
+            <Separator layoutX="150.0" layoutY="155.0" prefHeight="7.0" prefWidth="769.0" style="-fx-background-color: #bb97a1;" />
+            <Label fx:id="labelNombre" layoutX="99.0" layoutY="76.0" text="Usuario:" textFill="#907d82">
+               <font>
+                  <Font name="Tahoma Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelSaldo" layoutX="883.0" layoutY="76.0" text="Saldo:" textFill="#907d82">
+               <font>
+                  <Font name="Tahoma Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="243.0" layoutY="277.0" mnemonicParsing="false" onAction="#modoClasicoEvent" prefHeight="78.0" prefWidth="234.0" style="-fx-background-color: #bb97a1; -fx-border-radius: 10 10 10 10;" text="Modo clasico" textFill="WHITE" AnchorPane.topAnchor="277.0">
+               <font>
+                  <Font name="Tahoma Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="32.0" layoutY="16.0" mnemonicParsing="false" onAction="#cerrarSesion" prefHeight="36.0" prefWidth="112.0" style="-fx-background-color: #bb97a1; -fx-border-radius: 10 10 10 10;" text="Cerrar sesion" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="598.0" layoutY="277.0" mnemonicParsing="false" onAction="#modoCasinoEvent" prefHeight="78.0" prefWidth="234.0" style="-fx-background-color: #bb97a1; -fx-border-radius: 10 10 10 10;" text="Modo casino" textFill="WHITE" AnchorPane.topAnchor="277.0">
+               <font>
+                  <Font name="Tahoma Bold" size="24.0" />
+               </font>
+            </Button>
+            <TableView fx:id="tableJugadores" layoutX="361.0" layoutY="421.0" prefHeight="200.0" prefWidth="374.0" style="-fx-border-width: 3px 3px; -fx-border-color: #907d82;">
+              <columns>
+                <TableColumn fx:id="jugador" prefWidth="190.0" text="Nombre" />
+                <TableColumn fx:id="puntaje" minWidth="0.0" prefWidth="183.0" text="Puntaje" />
+              </columns>
+            </TableView>
+            <Label layoutX="450.0" layoutY="379.0" text="Ranking jugadores" textFill="#907d82">
+               <font>
+                  <Font name="Tahoma Bold" size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </bottom>
+</BorderPane>

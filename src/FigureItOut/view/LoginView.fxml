@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FigureItOut.controller.LoginController">
+   <center>
+      <AnchorPane prefHeight="650.0" prefWidth="1100.0" styleClass="background" stylesheets="@../resources/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#bb97a1" layoutX="363.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Figure it out">
+               <font>
+                  <Font name="Tahoma Bold" size="57.0" />
+               </font>
+            </Text>
+            <Region layoutX="283.0" layoutY="201.0" prefHeight="364.0" prefWidth="515.0" style="-fx-border-color: #836a71; -fx-border-width: 0004;" />
+            <Text fill="#836a71" layoutX="405.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inicio de sesión" wrappingWidth="298.87847900390625">
+               <font>
+                  <Font name="Tahoma Bold" size="37.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtUsuarioLogin" layoutX="527.0" layoutY="309.0" promptText="Ingrese su usuario" style="-fx-border-width: 2px 2px; -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10; -fx-border-color: #836a71;" AnchorPane.leftAnchor="527.0" AnchorPane.rightAnchor="420.0" />
+            <PasswordField fx:id="txtContrasenaLogin" layoutX="527.0" layoutY="369.0" promptText="Ingrese su contraseña" style="-fx-border-width: 2px 2px; -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10; -fx-border-color: #836a71;" AnchorPane.leftAnchor="527.0" AnchorPane.rightAnchor="420.0" />
+            <Text fill="#836a71" layoutX="392.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario:" wrappingWidth="90.87847900390625">
+               <font>
+                  <Font name="Tahoma Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#836a71" layoutX="392.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña:" wrappingWidth="131.21182250976562">
+               <font>
+                  <Font name="Tahoma Bold" size="20.0" />
+               </font>
+            </Text>
+            <Button layoutX="491.0" layoutY="438.0" mnemonicParsing="false" onAction="#inicioSesionEvent" prefHeight="23.0" prefWidth="95.0" text="Ingresar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Text fill="#615458" layoutX="295.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No tiene cuenta? registrese aqui:" wrappingWidth="298.87847900390625">
+               <font>
+                  <Font name="Tahoma Bold" size="15.0" />
+               </font>
+            </Text>
+            <Button layoutX="550.0" layoutY="527.0" mnemonicParsing="false" onAction="#registroEvent" prefHeight="14.0" prefWidth="60.0" text="Registro" textFill="#fffbfb" />
+         </children></AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FigureItOut.controller.ModoClasicoController">
+   <bottom>
+      <AnchorPane prefHeight="650.0" prefWidth="1100.0" styleClass="background" stylesheets="@../resources/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#bb97a1" layoutX="363.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Figure it out">
+               <font>
+                  <Font name="Tahoma Bold" size="57.0" />
+               </font>
+            </Text>
+            <Separator layoutX="150.0" layoutY="155.0" prefHeight="7.0" prefWidth="769.0" style="-fx-background-color: #bb97a1;" />
+            <Label fx:id="labelNombre" layoutX="99.0" layoutY="76.0" text="Usuario:" textFill="#907d82">
+               <font>
+                  <Font name="Tahoma Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelSaldo" layoutX="883.0" layoutY="76.0" text="Saldo:" textFill="#907d82">
+               <font>
+                  <Font name="Tahoma Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="421.0" layoutY="302.0" mnemonicParsing="false" onAction="#modoClasicoEvent" prefHeight="78.0" prefWidth="234.0" style="-fx-background-color: #bb97a1; -fx-border-radius: 10 10 10 10;" text="Iniciar" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma Bold" size="24.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </bottom>
+</BorderPane>

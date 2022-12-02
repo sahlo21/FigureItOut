@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="262.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <AnchorPane prefHeight="262.0" prefWidth="677.0" styleClass="background" stylesheets="@../resources/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="labelRespuesta" layoutX="83.0" layoutY="68.0" prefHeight="74.0" prefWidth="407.0" text="Mucho nivel, calmao" textFill="#6b4f57">
+               <font>
+                  <Font name="Tahoma Bold" size="39.0" />
+               </font>
+            </Label>
+            <Separator layoutX="151.0" layoutY="164.0" prefHeight="9.0" prefWidth="271.0" style="-fx-background-color: #6b4f57;" />
+         </children></AnchorPane>
+   </center>
+</BorderPane>
